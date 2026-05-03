@@ -88,11 +88,12 @@ python scraper.py
 日志文件位于 `../logs/scraper.log`，可查看详细运行信息。
 
 ## 🔧 自定义采集
-### 添加/修改城市
+#### 添加/修改城市
 编辑脚本中的 EUROPE_TARGETS 字典，按照 "城市名, 国家": geo_id 的格式添加新城市。geo_id 可从 Tripadvisor 景点列表页的 URL 中获取（例如 https://www.tripadvisor.com/Attractions-g187070-... 中的 187070 就是巴黎的 geo_id）。
-### 修改采集上限
+#### 修改采集上限
 PAGE_SIZE = 30：每页景点数（Tripadvisor 固定为 30，请勿随意修改）
-### 翻页安全上限：脚本中设置了 if offset > 1000: break，可根据需要调整。
+#### 翻页安全上限：脚本中设置了 if offset > 1000: break，可根据需要调整。
+
 
 
 ## 📝 代码结构
