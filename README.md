@@ -32,36 +32,42 @@ Tripadvisor 使用了多种阻拦技术：
 ```bash
 git clone https://github.com/yourusername/tripadvisor-scraper.git
 cd tripadvisor-scraper
+```
 
 ### 2. 安装 Python 依赖
 ```bash
 pip install websocket-client
+```
 
 ### 3. 创建必要目录
 脚本默认将数据保存在上级目录的 data/ 和 logs/ 文件夹中，请手动创建：
 ```bash
 mkdir -p ../data ../logs
+```
 
 ### 4. 启动 Chrome 调试模式
 在终端中执行以下命令（根据你的操作系统）：
-
 Windows：
 ```cmd
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --remote-allow-origins=*
+```
 
 macOS：
 ```bash
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --remote-allow-origins=*
+```
 
 Linux：
 ```bash
 google-chrome --remote-debugging-port=9222 --remote-allow-origins=*
+```
 
 ⚠️ 确保此时 Chrome 浏览器窗口已经打开一个空白标签页（或任意页面），并且没有其他程序占用 9222 端口。
 
 ### 基本运行
 ```bash
 python scraper.py
+```
 
 
 首次运行注意事项
