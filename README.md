@@ -96,11 +96,13 @@ PAGE_SIZE = 30：每页景点数（Tripadvisor 固定为 30，请勿随意修改
 
 
 ## 📝 代码结构
-'''text
+```text
 .
 ├── scraper.py               # 主脚本
 ├── README.md                # 本文档
 └── requirements.txt         # 依赖列表（仅 websocket-client）
+```
+
 主要核心类：
 CDP：封装 WebSocket 通信、CDP 命令发送、JS 执行等。
 scrape_city()：采集单个城市的所有分页。
