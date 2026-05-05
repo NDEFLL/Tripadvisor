@@ -28,11 +28,8 @@ Tripadvisor 使用了多种阻拦技术：
 
 ## 📦 安装与配置
 
-### 1. 克隆仓库
-```bash
-git clone https://github.com/yourusername/tripadvisor-scraper.git
-cd tripadvisor-scraper
-```
+### 1. 下载scraper.py文件
+
 
 ### 2. 安装 Python 依赖
 ```bash
@@ -94,15 +91,6 @@ python scraper.py
 PAGE_SIZE = 30：每页景点数（Tripadvisor 固定为 30，请勿随意修改）
 #### 翻页安全上限：脚本中设置了 if offset > 1000: break，可根据需要调整。
 
-
-
-## 📝 代码结构
-```text
-.
-├── scraper.py               # 主脚本
-├── README.md                # 本文档
-└── requirements.txt         # 依赖列表（仅 websocket-client）
-```
 
 主要核心类：
 CDP：封装 WebSocket 通信、CDP 命令发送、JS 执行等。
