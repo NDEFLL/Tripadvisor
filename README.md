@@ -45,7 +45,7 @@ pip install websocket-client
 mkdir -p ../data ../logs
 ```
 
-### 4. 启动 Chrome 调试模式
+### 4. 启动 Chrome 调试模式（已在代码中添加启动命令）
 在终端中执行以下命令（根据你的操作系统）：
 Windows：
 ```cmd
